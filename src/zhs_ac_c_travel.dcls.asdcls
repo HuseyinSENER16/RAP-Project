@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control Travel Consumption'
+@MappingRole: true
+define role ZHS_AC_C_TRAVEL {
+    grant
+        select
+            on
+                zhs_c_travel
+                    where
+                        inheriting conditions from entity zhs_r_travel;
+                        
+}
